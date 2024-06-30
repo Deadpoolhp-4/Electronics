@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import How from './components/How'
 import Why from './components/Why_us'
+import Best from './components/Best'
 
 const Homepage = () => {
   return (
@@ -11,6 +12,7 @@ const Homepage = () => {
       <Hero />
       <How />
       <Why />
+      <Best />
     </div>
   )
 }

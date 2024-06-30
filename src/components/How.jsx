@@ -2,7 +2,7 @@ import React from 'react'
 
 const How = () => {
   return (
-    <div className='flex-column items-center justify-center gap-4 p-10 w-full'>
+    <div className='flex-column items-center justify-center gap-4 p-10 px-40 w-full'>
         <div className='text-center text-[#1053D4] text-2xl font-semibold p-4'>
             <h3>
                 How it works

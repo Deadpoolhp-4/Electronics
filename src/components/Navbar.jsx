@@ -3,7 +3,7 @@ import logo from '../assets/logo.png'
 const Navbar = () => {
   return (
     <nav className="bg-[#1053D4] pb-6 px-10 pt-10 overflow-x-hidden " >
-      <div className="container mx-auto flex justify-between items-center px-10">
+      <div className="container mx-auto flex justify-between items-center px-36">
         <div className="text-white text-xl font-bold flex items-center gap-2" >
             <img src={logo} alt="logo" className='w-10 h-10' />
             MyBrand
