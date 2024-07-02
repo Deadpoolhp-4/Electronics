@@ -4,8 +4,8 @@ import hero2 from '../assets/Hero-2.png'
 
 const Hero = () => {
   return (
-    <div className='flex items-center justify-center h-screen px-10 overflow-x-hidden gap-10 '>
-      <div className='flex-column items-center justify-center p-10 w-1/2'>
+    <div className='flex items-center justify-center h-screen px-10  gap-10 px-40 py-20'>
+      <div className='flex-column  w-1/2'>
         <div>
             <h3 className='font-semibold text-xl text-[#1053D4] mb-6'>
             Best Home Electrician Service
