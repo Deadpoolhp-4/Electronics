@@ -38,7 +38,7 @@ const How = () => {
                         </p>
                     </div>
                 </div>
-                <div className='flex flex-col items-center justify-center gap-4 text-black p-4 border-x-2 border-[#1053D4]'>
+                <div className='flex flex-col items-center justify-center gap-4 text-black p-4  md:border-x-2 border-[#1053D4]'>
                     <div>
                         <h3 className='text-xl font-semibold box border-2 border-gray-dotted text-[#1053D4] px-4 rounded-full w-fit mx-auto'>
                             Step 2
