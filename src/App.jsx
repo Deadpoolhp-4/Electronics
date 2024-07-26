@@ -1,10 +1,10 @@
 import React from 'react'
-import Homepage from './Homepage'
+import AppRoutes from './Routes/Routes'
 
 const App = () => {
   return (
     <div>
-      <Homepage />
+      <AppRoutes />
     </div>
   )
 }

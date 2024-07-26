@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import Sidebar from './sidebar'
 import logo from '../assets/logo.png'
 
@@ -22,11 +23,11 @@ const Navbar = () => {
           </button>
         </div>
         <div className="hidden md:flex space-x-4">
-          <a href="#" className="text-gray-300 hover:text-white">Home</a>
-          <a href="#" className="text-gray-300 hover:text-white">About-Us</a>
-          <a href="#" className="text-gray-300 hover:text-white">Services</a>
-          <a href="#" className="text-gray-300 hover:text-white">Contact</a>
-          <a href="#" className="text-gray-300 hover:text-white">Page</a>
+          <Link to="/" className="text-gray-300 hover:text-white">Home</Link>
+          <Link to="/" className="text-gray-300 hover:text-white">About-Us</Link>
+          <Link to="/" className="text-gray-300 hover:text-white">Services</Link>
+          <Link to="/" className="text-gray-300 hover:text-white">Contact</Link>
+          <Link to="/product" className="text-gray-300 hover:text-white">Product</Link>
           <button className="bg-[#CAEE5A] px-4 py-2 font-semibold rounded-full text-black hover:bg-[#B8D54A]" >Get Started</button>
         </div>
         <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
