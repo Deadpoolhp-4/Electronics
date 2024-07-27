@@ -22,13 +22,17 @@ const Navbar = () => {
             Menu
           </button>
         </div>
+        <div className='flex items-center justify-center gap-4'>
         <div className="hidden md:flex space-x-4">
           <Link to="/" className="text-gray-300 hover:text-white">Home</Link>
           <Link to="/" className="text-gray-300 hover:text-white">About-Us</Link>
           <Link to="/services" className="text-gray-300 hover:text-white">Services</Link>
-          <Link to="/" className="text-gray-300 hover:text-white">Contact</Link>
           <Link to="/product" className="text-gray-300 hover:text-white">Product</Link>
+          
+        </div>
+        <div className='flex items-center justify-center'>
           <button className="bg-[#CAEE5A] px-4 py-2 font-semibold rounded-full text-black hover:bg-[#B8D54A] " >Get Started</button>
+        </div>
         </div>
         <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       </div>

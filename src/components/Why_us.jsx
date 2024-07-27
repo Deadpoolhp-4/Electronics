@@ -23,7 +23,7 @@ const Why_us = () => {
           <div className="flex flex-row md:flex-row justify-center items-center gap-4 mb-20 md:pl-10">
             <div className="text-left px-4 border-r-0 md:border-r-2">
               <p className="text-4xl md:text-6xl font-semibold text-white m-0 p-0">
-                <CountUp end={15} duration={2.5} /> +
+                <CountUp end={12} duration={5} /> +
               </p>
               <p className="text-white text-lg md:text-xl m-0 p-0">
                 Years Experience
@@ -31,7 +31,7 @@ const Why_us = () => {
             </div>
             <div className="text-left">
               <p className="text-4xl md:text-6xl font-semibold text-white m-0 p-0">
-                <CountUp end={2649} duration={2.5} />+
+                <CountUp end={100} duration={10} />+
               </p>
               <p className="text-white text-lg md:text-xl m-0 p-0">
                 Satisfied Clients
@@ -63,11 +63,6 @@ const Why_us = () => {
                 <p className="text-white">We are flexible and adaptable to your needs.</p>
               </div>
             </div>
-          </div>
-          <div className="flex items-left pt-10">
-            <a href="/services" className="bg-[#CAEE5A] text-black text-lg md:text-xl font-semibold py-2 px-4 rounded-md">
-              View more
-            </a>
           </div>
         </div>
       </div>

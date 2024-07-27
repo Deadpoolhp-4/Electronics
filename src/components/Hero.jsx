@@ -5,7 +5,7 @@ import hero2 from '../assets/Hero-2.png'
 const Hero = () => {
   return (
     <div className='flex flex-col md:flex-row items-center justify-center h-full px-10 gap-10 md:px-40 py-20'>
-      <div className='flex flex-col w-full md:w-1/2'>
+      <div className='flex flex-col w-full md:w-1/2 items-start'>
         <div>
             <h3 className='font-semibold text-xl text-[#1053D4] mb-6'>
             Best Home Electrician Service
@@ -26,8 +26,8 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className='flex flex-col items-center justify-center w-full md:w-auto'>
-        <img src={hero2} alt="hero" className='w-full md:w-auto'/>
+      <div className='flex flex-col items-center justify-between w-full md:w-auto flex-grow'>
+        <img src={hero2} alt="hero" className='w-full md:w-auto h-full'/>
       </div>
     </div>
   )
