@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center w-full md:w-auto">
           <div className="text-white text-xl font-bold flex items-center gap-2 md:justify-center gap-4">
             <img src={logo} alt="logo" className='w-10 h-10' />
-            <span>MyBrand</span>
+            <span>MES Services</span>
           </div>
           <button className="md:hidden bg-[#CAEE5A] px-4 py-2 font-semibold rounded-full text-black hover:bg-[#B8D54A]" onClick={toggleSidebar}>
             Menu
@@ -25,10 +25,10 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-4">
           <Link to="/" className="text-gray-300 hover:text-white">Home</Link>
           <Link to="/" className="text-gray-300 hover:text-white">About-Us</Link>
-          <Link to="/" className="text-gray-300 hover:text-white">Services</Link>
+          <Link to="/services" className="text-gray-300 hover:text-white">Services</Link>
           <Link to="/" className="text-gray-300 hover:text-white">Contact</Link>
           <Link to="/product" className="text-gray-300 hover:text-white">Product</Link>
-          <button className="bg-[#CAEE5A] px-4 py-2 font-semibold rounded-full text-black hover:bg-[#B8D54A]" >Get Started</button>
+          <button className="bg-[#CAEE5A] px-4 py-2 font-semibold rounded-full text-black hover:bg-[#B8D54A] " >Get Started</button>
         </div>
         <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       </div>
