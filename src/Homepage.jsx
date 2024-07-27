@@ -20,8 +20,8 @@ const Homepage = () => {
       <Why />
       <Best />
       <Faq />
-      <Meet />
-      <Testimonial />
+      {/* <Meet />
+      <Testimonial /> */}
       <Footer />
     </div>
   )

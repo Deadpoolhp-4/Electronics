@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import './css/animation.css';
 const services = [
-  { id: 1, name: 'Service 1', image: 'assets/images/service_1.svg', info: 'Information about Service 1' },
-  { id: 2, name: 'Service 2', image: 'assets/images/service_2.svg', info: 'Information about Service 2' },
-  { id: 3, name: 'Service 3', image: 'assets/images/service_3.svg', info: 'Information about Service 3' },
-  { id: 4, name: 'Service 4', image: 'assets/images/service_4.svg', info: 'Information about Service 4' },
-  { id: 5, name: 'Service 5', image: 'assets/images/service_5.svg', info: 'Information about Service 5' },
+  { id: 1, name: 'Repairing', image: 'assets/images/service_1.svg', info: 'All types of industrial electronics like PLC, HMI, and VFD.' },
+  { id: 2, name: 'Trading', image: 'assets/images/service_2.svg', info: 'Industrial automation products.' },
+  { id: 3, name: 'Design & Development', image: 'assets/images/service_3.svg', info: 'Machine spares.' },
+  { id: 4, name: 'Panels Manufacturing', image: 'assets/images/service_4.svg', info: 'Panels Manufacturing' },
+  { id: 5, name: 'Maintenance & Servicing', image: 'assets/images/service_5.svg', info: 'All types of winders' },
 ];
 
 const ServicesGrid = () => {
@@ -58,7 +58,7 @@ const ServicesGrid = () => {
                 </div>
               </div>
               <div className="card-back flex flex-col items-center justify-center p-4 border rounded-2xl bg-white h-full">
-                <p className="text-gray-700">{service.info}</p>
+                <p className="text-gray-700 text-center font-medium">{service.info}</p>
                 <button
                   onClick={() => handleFlip(index)}
                   className="bg-blue-500 text-white px-4 py-2 rounded-full mt-4 hover:bg-blue-600 transition-colors"
