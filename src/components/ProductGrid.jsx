@@ -52,7 +52,7 @@ const ProductGrid = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 p-6 px-32 justify-items-center">
         {products.map((product, index) => (
           <div key={product.id} className="relative">
-            <div className={`card ${flipped[index] ? 'flipped' : ''} w-64 h-80 p-4 transition-transform transform hover:scale-105 shadow-custom-light rounded-2xl`}>
+            <div className={`card ${flipped[index] ? 'flipped' : ''} w-72 h-80 p-4 transition-transform transform hover:scale-105 shadow-custom-light rounded-2xl`}>
               <div className="card-front flex flex-col items-center justify-center p-4 border rounded-2xl bg-white h-full transition-colors">
                 <h2 className="text-xl font-semibold mb-2 text-gray-800">{product.name}</h2>
                 <img src={product.image} alt={product.name} className="w-40 h-40 object-cover mb-4 p-2 " />

@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='flex flex-col items-start mb-8 md:mb-0'>
           <div className='flex items-center gap-2 mb-4'>
             <img src={logo} alt="logo" className='w-10 h-10' />
-            <span className='text-xl font-bold'>MyBrand</span>
+            <span className='text-xl font-bold'>MES Services</span>
           </div>
           <div className='w-full md:w-3/4 text-left mb-4'>
             <p className='text-gray-300'>
@@ -69,7 +69,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='border-t border-gray-300 mt-8 pt-4 text-center'>
-        <p className='text-gray-300'>&copy; 2023 MyBrand. All rights reserved.</p>
+        <p className='text-gray-300'>&copy; 2024 MES Services. All rights reserved.</p>
       </div>
     </div>
   );
