@@ -86,7 +86,7 @@ const How = () => {
             </div>
         </div>
        <div className='flex flex-col items-center justify-center gap-4 text-center py-10'>
-            <a href='https://wa.me/your_number' target='_blank' rel='noopener noreferrer' className='flex items-center bg-[#25D366] text-white font-semibold px-8 py-4 rounded-full hover:bg-[#128C7E] transition-all duration-300'>
+            <a href='https://wa.me/+919974122681' target='_blank' rel='noopener noreferrer' className='flex items-center bg-[#25D366] text-white font-semibold px-8 py-4 rounded-full hover:bg-[#128C7E] transition-all duration-300'>
                 <FontAwesomeIcon icon={faWhatsapp} className='w-6 h-6 mr-2' />
                 Connect Us Through WhatsApp
             </a>

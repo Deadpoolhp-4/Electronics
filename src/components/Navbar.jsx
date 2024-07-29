@@ -30,8 +30,10 @@ const Navbar = () => {
           <Link to="/product" className="text-gray-300 hover:text-white">Product</Link>
           
         </div>
-        <div className='flex items-center justify-center'>
-          <button className="bg-[#CAEE5A] px-4 py-2 font-semibold rounded-full text-black hover:bg-[#B8D54A] " >Get Started</button>
+        <div className='flex items-center justify-center hidden md:flex'>
+          <a href="#footer" className="bg-[#CAEE5A] px-4 py-2 font-semibold rounded-full text-black hover:bg-[#B8D54A]">
+            Contact Us
+          </a>
         </div>
         </div>
         <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />

@@ -1,10 +1,11 @@
 import React from 'react';
 import logo from '../assets/logo.png';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className='bg-[#1053D4] text-white py-10 px-5 md:px-10 lg:px-40'>
+    <div className='bg-[#1053D4] text-white py-10 px-5 md:px-10 lg:px-40' id="footer">
       <div className='flex flex-col md:flex-row justify-between'>
         <div className='flex flex-col items-center mb-8 md:mb-0'>
           <div className='flex items-center gap-2 mb-4'>
@@ -30,27 +31,37 @@ const Footer = () => {
         <div className='flex flex-col items-center mb-8 md:mr-10 text-center w-full md:w-1/4 gap-4'>
           <h2 className='text-2xl font-bold mb-2'>Menu</h2>
           <ul className='text-left text-xl font-small'>
-            <li className='text-gray-300 hover:text-white'>Home</li>
-            <li className='text-gray-300 hover:text-white'>About Us</li>
-            <li className='text-gray-300 hover:text-white'>Services</li>
-            <li className='text-gray-300 hover:text-white'>Contact</li>
-            <li className='text-gray-300 hover:text-white'>Page</li>
+            <li className='text-gray-300 hover:text-white'>
+              <Link to="/">Home</Link>
+            </li>
+            <li className='text-gray-300 hover:text-white'>
+              <Link to="/">About Us</Link>
+            </li>
+            <li className='text-gray-300 hover:text-white'>
+              <Link to="/services">Services</Link>
+            </li>
+            <li className='text-gray-300 hover:text-white'>
+              <Link to="#footer">Contact</Link>
+            </li>
+            <li className='text-gray-3000 hover:text-white'>
+              <Link to="/product">Products</Link>
+            </li>
           </ul>
         </div>
         <div className='flex flex-col items-center mb-8 md:mr-10 text-center w-full md:w-1/4 gap-4'>
           <h2 className='text-2xl font-bold mb-2'>Contact Us</h2>
           <div className='flex flex-col mt-4 gap-2'>
-            <div className='flex justify-start items-center text-gray-300'>
+            <div className='flex justify-center items-center text-gray-300'>
               <FaPhone className='mr-2' />
-              <span>+91 9876543210</span>
+              <span>+91 9974122681</span>
             </div>
-            <div className='flex justify-start items-center text-gray-300'>
+            <div className='flex justify-center items-center text-gray-300'>
               <FaEnvelope className='mr-2' />
-              <span>mes@gmail.com</span>
+              <span>Satish_kashyap1974@Rediffmail.com</span>
             </div>
-            <div className='flex justify-start items-center text-gray-300'>
+            <div className='flex justify-center items-center text-gray-300'>
               <FaMapMarkerAlt className='mr-2' />
-              <span>MES Services, India</span>
+              <span>601,Alpine , Garden city ,Samarvarni ,Silvassa-396230</span>
             </div>
           </div>
         </div>
