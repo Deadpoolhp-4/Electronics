@@ -2,22 +2,39 @@ import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import './css/animation.css';
 
+// Import images
+import image1 from '../assets/Image  (1).png';
+import image2 from '../assets/Image  (2).png';
+import image3 from '../assets/Image  (3).png';
+import image4 from '../assets/Image  (4).png';
+import image5 from '../assets/Image  (5).png';
+import image6 from '../assets/Image  (6).png';
+import image7 from '../assets/Image  (7).png';
+import image8 from '../assets/Image  (8).png';
+import image9 from '../assets/Image  (9).png';
+import image10 from '../assets/Image  (10).png';
+import image11 from '../assets/Image  (11).png';
+import image12 from '../assets/Image  (12).png';
+import image13 from '../assets/Image  (13).png';
+import image14 from '../assets/Image  (14).png';
+import image15 from '../assets/Image  (15).png';
+
 const products = [
-  { id: 1, name: 'SSR', image: 'src/assets/Image  (1).png', info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },  
-  { id: 2, name: 'Automation Products', image: 'src/assets/Image  (2).png', info: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
-  { id: 3, name: 'Relay Cards', image: 'src/assets/Image  (3).png', info: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.' },
-  { id: 4, name: 'Limit Switches', image: 'src/assets/Image  (4).png', info: 'Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.' },
-  { id: 5, name: 'Process Controllers', image: 'src/assets/Image  (5).png', info: 'In voluptate velit esse cillum dolore eu fugiat nulla pariatur.' },
-  { id: 6, name: 'Process Controllers', image: 'src/assets/Image  (6).png', info: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.' },
-  { id: 7, name: 'AC Drive', image: 'src/assets/Image  (7).png', info: 'Deserunt mollit anim id est laborum.' },
-  { id: 8, name: 'PLC Controllers', image: 'src/assets/Image  (8).png', info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-  { id: 9, name: 'Servo Motors', image: 'src/assets/Image  (9).png', info: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
-  { id: 10, name: 'Photoelectric Sensors', image: 'src/assets/Image  (10).png', info: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.' },
-  { id: 11, name: 'Encoders', image: 'src/assets/Image  (11).png', info: 'Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.' },
-  { id: 12, name: 'S.M.P.S', image: 'src/assets/Image  (12).png', info: 'Information about Product 12' },
-  { id: 13, name: 'PID Temperature Controllers', image: 'src/assets/Image  (13).png', info: 'Information about Product 13' },
-  { id: 14, name: 'Inductive & Capacitive Switch', image: 'src/assets/Image  (14).png', info: 'Information about Product 14' },
-  { id: 15, name: 'Speed Sensor', image: 'src/assets/Image  (15).png', info: 'Information about Product 15' }
+  { id: 1, name: 'SSR', image: image1, info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+  { id: 2, name: 'Automation Products', image: image2, info: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
+  { id: 3, name: 'Relay Cards', image: image3, info: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.' },
+  { id: 4, name: 'Limit Switches', image: image4, info: 'Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.' },
+  { id: 5, name: 'Process Controllers', image: image5, info: 'In voluptate velit esse cillum dolore eu fugiat nulla pariatur.' },
+  { id: 6, name: 'Process Controllers', image: image6, info: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.' },
+  { id: 7, name: 'AC Drive', image: image7, info: 'Deserunt mollit anim id est laborum.' },
+  { id: 8, name: 'PLC Controllers', image: image8, info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+  { id: 9, name: 'Servo Motors', image: image9, info: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
+  { id: 10, name: 'Photoelectric Sensors', image: image10, info: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.' },
+  { id: 11, name: 'Encoders', image: image11, info: 'Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.' },
+  { id: 12, name: 'S.M.P.S', image: image12, info: 'Information about Product 12' },
+  { id: 13, name: 'PID Temperature Controllers', image: image13, info: 'Information about Product 13' },
+  { id: 14, name: 'Inductive & Capacitive Switch', image: image14, info: 'Information about Product 14' },
+  { id: 15, name: 'Speed Sensor', image: image15, info: 'Information about Product 15' }
 ];
 
 const ProductGrid = () => {

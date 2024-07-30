@@ -35,15 +35,15 @@ const Footer = () => {
               <Link to="/">Home</Link>
             </li>
             <li className='text-gray-300 hover:text-white'>
-              <Link to="/">About Us</Link>
+              <Link to="/about">About Us</Link>
             </li>
             <li className='text-gray-300 hover:text-white'>
               <Link to="/services">Services</Link>
             </li>
             <li className='text-gray-300 hover:text-white'>
-              <Link to="#footer">Contact</Link>
+              <Link to="/contact">Contact</Link>
             </li>
-            <li className='text-gray-3000 hover:text-white'>
+            <li className='text-gray-300 hover:text-white'>
               <Link to="/product">Products</Link>
             </li>
           </ul>
@@ -59,25 +59,50 @@ const Footer = () => {
               <FaEnvelope className='mr-2' />
               <span>Satish_kashyap1974@Rediffmail.com</span>
             </div>
-            <div className='flex justify-center items-center text-gray-300'>
-              <FaMapMarkerAlt className='mr-2' />
-              <span>601,Alpine , Garden city ,Samarvarni ,Silvassa-396230</span>
+            <div className='flex flex-col justify-center items-center text-gray-300'>
+              <div className='flex justify-center items-center'>
+                <FaMapMarkerAlt className='mr-2 ' />
+               
+              <div className='flex flex-col'>
+              <span className='text-center'>
+                  601, Alpine, Garden City, Samarvarni</span>
+                  </div>
+                  
+              </div>
+              <span>Silvassa-396230 </span>
             </div>
           </div>
         </div>
-        <div className='flex flex-col items-center'>
-          <h2 className='text-2xl font-bold mb-4'>Subscribe</h2>
-          <form className='flex flex-col'>
+        <div className='flex flex-col items-center mb-8 md:mr-10 text-center w-full md:w-1/4 gap-4'>
+          <h2 className='text-2xl font-bold mb-4'>Get in Touch</h2>
+          <form
+            action="https://docs.google.com/forms/d/e/1FAIpQLSdQareGt5xx1ZMP2TSHkB--qpku5qL34V_g2j2HrBtdVr57IA/formResponse"
+            method="POST"
+            target="_blank"
+            className='flex flex-col'
+          >
+            <input
+              type='text'
+              name="entry.415067251"
+              placeholder='Your Name'
+              className='p-4 mb-2 rounded-full text-black w-full md:w-[300px] h-[50px]'
+            />
             <input
               type='email'
-              placeholder='Enter your email'
-              className='p-4 mb-4 rounded-full text-black w-full md:w-[300px] h-[50px]'
+              name="entry.343892843"
+              placeholder='Your Email'
+              className='p-4 mb-2 rounded-full text-black w-full md:w-[300px] h-[50px]'
+            />
+            <textarea
+              name="entry.815593122"
+              placeholder='Your Message'
+              className='p-4 mb-4 rounded-lg text-black w-full md:w-[300px] h-[100px]'
             />
             <button
               type='submit'
               className='bg-[#CAEE5A] text-black text-xl font-semibold rounded-full p-2 hover:bg-[#B8E34A] transition-colors duration-300 w-full md:w-[200px]'
             >
-              Subscribe
+              Send Message
             </button>
           </form>
         </div>
