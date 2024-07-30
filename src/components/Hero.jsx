@@ -27,7 +27,7 @@ const Hero = () => {
       </div>
 
       <div className='flex flex-col items-center justify-between w-full md:w-auto flex-grow'>
-        <img src={hero2} alt="hero" className='w-full md:w-auto h-full'/>
+        <img src={hero2} alt="hero" className='w-full md:w-auto h-auto max-h-[600px]'/>
       </div>
     </div>
   )
